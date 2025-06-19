@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Platform Pembelajaran Tari Tradisional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#2563eb",
+              secondary: "#475569",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex items-center">
+            <a href="#" class="text-2xl font-bold text-primary"
+              >Tari Tradisional</a
+            >
+          </div>
+          <!-- Mobile menu button -->
+          <div class="flex items-center sm:hidden">
+            <button
+              type="button"
+              class="mobile-menu-button inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <i class="fas fa-bars text-xl"></i>
+            </button>
+          </div>
+          <!-- Desktop menu -->
+          <div class="hidden sm:flex sm:items-center sm:space-x-8">
+            <a href="#" class="text-primary font-medium">Beranda</a>
+            <a
+              href="#materi"
+              class="text-gray-500 hover:text-primary font-medium"
+              >Materi</a
+            >
+            <a
+              href="#evaluasi"
+              class="text-gray-500 hover:text-primary font-medium"
+              >Evaluasi</a
+            >
+            <a
+              href="#kontak"
+              class="text-gray-500 hover:text-primary font-medium"
+              >Kontak</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Mobile menu -->
+      <div class="sm:hidden hidden" id="mobile-menu">
+        <div class="px-2 pt-2 pb-3 space-y-1">
+          <a href="#" class="block px-3 py-2 text-primary font-medium"
+            >Beranda</a
+          >
+          <a
+            href="#materi"
+            class="block px-3 py-2 text-gray-500 hover:text-primary font-medium"
+            >Materi</a
+          >
+          <a
+            href="#evaluasi"
+            class="block px-3 py-2 text-gray-500 hover:text-primary font-medium"
+            >Evaluasi</a
+          >
+          <a
+            href="#kontak"
+            class="block px-3 py-2 text-gray-500 hover:text-primary font-medium"
+            >Kontak</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section
+      class="relative pt-24 pb-16 bg-gradient-to-r from-blue-900 to-blue-700 text-white"
+    >
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div
+        class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center"
+      >
+        <h1 class="text-4xl sm:text-5xl font-bold mb-6">
+          Platform Pembelajaran Tari Tradisional
+        </h1>
+        <p class="text-xl sm:text-2xl mb-8 opacity-90">
+          Media edukasi untuk mengenal dan mempelajari tari-tari tradisional
+          Indonesia.
+        </p>
+        <a
+          href="#materi"
+          class="inline-block bg-primary hover:bg-blue-700 text-white font-bold py-3 px-8 rounded-full transition duration-300"
+          >Mulai Belajar</a
+        >
+      </div>
+    </section>
+
+    <!-- Materi Section -->
+    <section id="materi" class="py-20 bg-gray-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 class="text-3xl font-bold text-center mb-12">
+          Materi Pembelajaran
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Tari Jaipong Card -->
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300"
+          >
+            <img
+              src="./gambar/tari-jaipong.png"
+              class="w-full h-64 object-cover"
+              alt="Tari Jaipong"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-3">Tari Jaipong</h3>
+              <p class="text-gray-600 mb-4">
+                <strong>Definisi:</strong> Tari Jaipong adalah tarian
+                tradisional dari Jawa Barat yang dikenal dengan gerakan yang
+                energik, lincah, dan penuh semangat.
+              </p>
+              <div class="flex space-x-3">
+                <a
+                  href="https://youtu.be/GSe-m4L7hvQ"
+                  target="_blank"
+                  class="flex-1 text-center bg-primary text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >Lihat Video</a
+                >
+                <a
+                  href="https://www.gramedia.com/literasi/tari-jaipong/?srsltid=AfmBOopjbI-6AK40LakCff0tGuXwbP1GC_1u19VfXwdUS7dO52N8b6zK"
+                  target="_blank"
+                  class="flex-1 text-center border border-gray-300 text-gray-600 py-2 rounded-lg hover:bg-gray-50 transition duration-300"
+                  >Lihat Article</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300"
+          >
+            <img
+              src="./gambar/tari-golek.png"
+              class="w-full h-64 object-cover"
+              alt="Tari Jaipong"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-3">Tari Golek</h3>
+              <p class="text-gray-600 mb-4">
+                <strong>Definisi:</strong> Tari Golek adalah tarian klasik dari
+                Yogyakarta yang menggambarkan kelembutan dan keanggunan wanita
+                Jawa.
+              </p>
+              <div class="flex space-x-3">
+                <a
+                  href="https://youtu.be/8X98n2Fjnpw?si=0XXo1Y1EldtYnsak"
+                  target="_blank"
+                  class="flex-1 text-center bg-primary text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >Lihat Video</a
+                >
+                <a
+                  href="https://www.gramedia.com/literasi/tari-golek-menak/?srsltid=AfmBOoqVD7zJb1PF3Xobp6SHB4jvPodmuiQR4tcMsRgcIV2IjTuf3GZo"
+                  target="_blank"
+                  class="flex-1 text-center border border-gray-300 text-gray-600 py-2 rounded-lg hover:bg-gray-50 transition duration-300"
+                  >Lihat Article</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition duration-300"
+          >
+            <img
+              src="./gambar/tari-saman.png"
+              class="w-full h-64 object-cover"
+              alt="Tari Jaipong"
+            />
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-3">Tari Saman</h3>
+              <p class="text-gray-600 mb-4">
+                <strong>Definisi:</strong> Tari Saman adalah tarian tradisional
+                dari suku Gayo di Aceh yang ditampilkan oleh sekelompok penari
+                duduk berjejer dan menampilkan gerakan cepat dan kompak.
+              </p>
+              <div class="flex space-x-3">
+                <a
+                  href="https://youtu.be/vSFt4EfMr9I?si=u0XcQoC0NzBnvzHD"
+                  target="_blank"
+                  class="flex-1 text-center bg-primary text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300"
+                  >Lihat Video</a
+                >
+                <a
+                  href="https://www.gramedia.com/literasi/tari-saman/?srsltid=AfmBOoowWFSJd8wBzb13uo7qT0gIIdU0lOwBznOg--b-RJRUPisLLuu-"
+                  target="_blank"
+                  class="flex-1 text-center border border-gray-300 text-gray-600 py-2 rounded-lg hover:bg-gray-50 transition duration-300"
+                  >Lihat Article</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Similar cards for Tari Saman and Tari Golek -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Evaluasi Section -->
+    <section id="evaluasi" class="py-20 bg-white">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-8">Evaluasi</h2>
+        <div class="bg-gray-50 rounded-xl p-8 shadow-lg">
+          <p class="text-xl mb-4">Siap untuk menguji pengetahuan Anda?</p>
+          <p class="text-gray-600 mb-6">
+            Pastikan sudah menonton dan membaca semua materi tari yang ada
+          </p>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSfekyXycw_T3tEkMSRIlCxV6ShMoZPQjoCI2Ol9uCEzAAvwJg/viewform?usp=header"
+            target="_blank"
+            class="inline-block bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-full transition duration-300"
+            >Mulai Evaluasi</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-20 bg-gray-50">
+      <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 class="text-3xl font-bold mb-8">Hubungi Kami</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <a
+            href="mailto:sanggartarimustika1@gmail.com"
+            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300"
+          >
+            <i class="fas fa-envelope text-3xl text-primary mb-3"></i>
+            <p class="text-gray-600">Email</p>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=6281369298725"
+            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300"
+          >
+            <i class="fab fa-whatsapp text-3xl text-primary mb-3"></i>
+            <p class="text-gray-600">WhatsApp</p>
+          </a>
+          <a
+            href="https://instagram.com/sanggartarimustika"
+            class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition duration-300"
+          >
+            <i class="fab fa-instagram text-3xl text-primary mb-3"></i>
+            <p class="text-gray-600">Instagram</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p class="text-gray-400">
+          &copy; 2025 Platform Pembelajaran Tari Tradisional | Prodi Seni Tari
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript for mobile menu -->
+    <script>
+      const mobileMenuButton = document.querySelector(".mobile-menu-button");
+      const mobileMenu = document.querySelector("#mobile-menu");
+
+      mobileMenuButton.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
